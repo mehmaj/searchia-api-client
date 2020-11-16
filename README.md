@@ -24,7 +24,7 @@
 
 
 ```
-<script type="text/javascript" src="searchia.js?v=2"></script>
+<script type="text/javascript" src="https://github.com/mehmaj/searchia-api-client/blob/main/searchia-api-client.js"></script>
 <script type="text/javascript">
      window.onload = function () {
      searchiaInstantSearchTemplate:"<tr><td>${this.position}</td><td>${this.docId}</td><td>${this.depth}</td><td>${this.title}</td></tr>",
