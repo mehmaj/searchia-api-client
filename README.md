@@ -1,6 +1,6 @@
 <b>مستندات مربوط به استفاده از سرچیا<b>
 
-## لیست محتوا
+# لیست محتوا
 
 * [توضیحات](#توضیحات)
 	
@@ -10,22 +10,25 @@
 
 * [توابع](#توابع)
 
-## توضیحات
+# توضیحات
 <p dir="rtl">این کتابخانه جهت تسهیل استفاده از خدمات جست‌وجو به عنوان سرویس توسعه داده‌شده‌است</p>
 
-## تکنولوژی
+# تکنولوژی
 * javascript
 
 
 	
-##  تنظیمات
-<p dir="rtl">
-جهت استفاده از این کتاب‌خانه لازم است قبل از فراخوانی توابع فایل حاوی توابع در صفحه بارگزاری شود.
-	<br>
-لازم است فقط یک بار قبل از استفاده از توابع مقادیر مربوط به تنظیمات مقداردهی شود.
-	<br>
-بدیهی است در صورت عدم مقداردهی هر یک از موارد، مقدار پیش‌فرض اعمال خواهد شد.
-</p>
+#  تنظیمات
+<div dir="rtl">
+جهت استفاده از این کتاب‌خانه لازم است قبل از فراخوانی توابع فایل حاوی توابع در صفحه بارگزاری شود
+<br>
+لازم است فقط یک بار قبل از استفاده از توابع مقادیر مربوط به تنظیمات مقداردهی شود
+<br>
+بدیهی است در صورت عدم مقداردهی هر یک از موارد، مقدار پیش‌فرض اعمال خواهد شد
+<br>	
+
+</div>
+
 
 
 ```
@@ -48,24 +51,51 @@
   };
 </script>
 ```
-<p>searchiaInstantSearchTemplate</p><p dir="rtl">تمپلیت مربوط به سرچ سریع</p>
-<p>searchiaInstantSearchResultContainer</p><p dir="rtl">تمپلیت مربوط به سرچ سریع</p>
-<p>searchiaSearchTemplate</p><p dir="rtl">تمپلیت مربوط به سرچ سریع</p>
-<p>searchiaSearchResultContainer</p><p dir="rtl">تمپلیت مربوط به سرچ سریع</p>
-<p>searchiaTotalHitsContainer</p><p dir="rtl"></p>
-<p>searchiaSearchTime</p><p dir="rtl"></p>
-<p>searchiaIndexName</p><p dir="rtl"></p>
-<p>searchiaAPIKey</p><p dir="rtl"></p>
-<p>searchiaSearchInputId</p><p dir="rtl"></p>
-<p>searciaFrom</p><p dir="rtl"></p>
-<p>searchiaNRPP</p><p dir="rtl"></p>
+<ul dir="rtl">
+	<p dir="rtl">
+		قبل از ساختن قالب‌ها لازم است بدانید:
+	</p>
+	<li dir="rtl">
+		قالب‌ها تگ‌های htlmای هستند که به ازای هر element باید به selectorای که در تنظیمات مشخص شده‌اند اضافه شود
+	</li>
+	<li dir="rtl">
+برای استفاده از مقادیر موجود در سند(document) می‌توانید از عبارت ${this.token} استفاده کنید با این توضیح که به‌جای کلمه token هر ویژگی(field) موجود در سندی که قبلا در سرچیا ذخیره شده است، قابل استفاده است
+	</li>
+	<li dir="rtl">
+	مقادیر docId و position همواره در تمام سندها به صورت پیش‌فرض قابل دسترسی هستند
+</li>
+</ul>
+
+<p>searchiaInstantSearchTemplate</p>
+<p dir="rtl">تمپلیت مربوط به سرچ سریع</p>
+<p>searchiaInstantSearchResultContainer</p>
+<p dir="rtl"></p>
+<p>searchiaSearchTemplate</p>
+<p dir="rtl"></p>
+<p>searchiaSearchResultContainer</p>
+<p dir="rtl"></p>
+<p>searchiaTotalHitsContainer</p>
+<p dir="rtl"></p>
+<p>searchiaSearchTime</p>
+<p dir="rtl"></p>
+<p>searchiaIndexName</p>
+<p dir="rtl"></p>
+<p>searchiaAPIKey</p>
+<p dir="rtl"></p>
+<p>searchiaSearchInputId</p>
+<p dir="rtl"></p>
+<p>searciaFrom</p>
+<p dir="rtl"></p>
+<p>searchiaNRPP</p>
+<p dir="rtl"></p>
 <p>runSearchiaOnInputChange</p><p dir="rtl"></p>
 
 
 
-## توابع
+# توابع
 
 <p dir="rtl">این کتاب‌خانه به طور کلی شامل ۴ تابع است که نحوه استفاده از هر کدام به شرح زیر است:</p>
+
 
 ```
 instantSearch(query,nrpp);
