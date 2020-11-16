@@ -1,13 +1,17 @@
 <b>مستندات مربوط به استفاده از سرچیا<b>
+
 ## لیست محتوا
-* [توضیحات](#general-info)
+
+* [توضیحات](#توضیحات)
+	
 * [تکنولوژی](#technologies)
+
 * [نحوه استفاده](#setup)
 
 ## توضیحات
-این کتابخانه جهت تسهیل استفاده از خدمات جست‌وجو به عنوان سرویس توسعه داده‌شده‌است	
+<p dir="rtl">این کتابخانه جهت تسهیل استفاده از خدمات جست‌وجو به عنوان سرویس توسعه داده‌شده‌است</p>
+
 ## تکنولوژی
-تکنولوژی مورد استفاده جهت پیاده‌سازی:
 * javascript
 
 
@@ -46,8 +50,33 @@
 <p>searchiaInstantSearchResultContainer</p><p dir="rtl">تمپلیت مربوط به سرچ سریع</p>
 <p>searchiaSearchTemplate</p><p dir="rtl">تمپلیت مربوط به سرچ سریع</p>
 <p>searchiaSearchResultContainer</p><p dir="rtl">تمپلیت مربوط به سرچ سریع</p>
+<p>searchiaTotalHitsContainer</p><p dir="rtl"></p>
+<p>searchiaSearchTime</p><p dir="rtl"></p>
+<p>searchiaIndexName</p><p dir="rtl"></p>
+<p>searchiaAPIKey</p><p dir="rtl"></p>
+<p>searchiaSearchInputId</p><p dir="rtl"></p>
+<p>searciaFrom</p><p dir="rtl"></p>
+<p>searchiaNRPP</p><p dir="rtl"></p>
+<p>runSearchiaOnInputChange</p><p dir="rtl"></p>
 
 
 
 ## توابع
-این کتاب‌خانه به طور کلی شامل ۴ تابع است که نحوه استفاده از هر کدام به شرح زیر است:
+
+<p dir="rtl">این کتاب‌خانه به طور کلی شامل ۴ تابع است که نحوه استفاده از هر کدام به شرح زیر است:</p>
+
+```
+instantSearch(query,nrpp);
+```
+
+```
+search(query,from,nrpp);
+```
+
+```
+click(query,docId,position);
+```
+
+```
+addToCart(docId);
+```
