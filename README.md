@@ -86,7 +86,7 @@
 ###### <p dir="rtl">تعداد نتایج واکشی شده (Number Of Results Per Page)</p>
  <p>runSearchiaOnInputChange</p>
 
-###### <p dir="rtl">در صورتی که مقدار این مورد برابر true باشد با تغییر input مربوط به جستجو(searchiaSearchInputId) به صورت خودکار محتوای تابع instantSearch() با پرس‌و‌جو موجود در input جست‌و‌جو فراخوانی خواهد‌شد</p>
+###### <p dir="rtl">در صورتی که مقدار این مورد برابر true باشد با تغییر input مربوط به جستجو(searchiaSearchInputId) به صورت خودکار تابع instantSearch() با پرس‌و‌جو موجود در input جست‌و‌جو فراخوانی خواهد‌شد</p>
 
 
 
