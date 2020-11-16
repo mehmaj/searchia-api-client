@@ -51,7 +51,7 @@
   };
 </script>
 ```
-<ul dir="rtl">
+<ul dir="rtl" class="flash">
 	<p dir="rtl">
 		قبل از ساختن قالب‌ها لازم است بدانید:
 	</p>
@@ -67,28 +67,29 @@
 </ul>
 
 <p>searchiaInstantSearchTemplate</p>
-<p dir="rtl">تمپلیت مربوط به سرچ سریع</p>
+<p dir="rtl">قالب مربوط به جست‌و‌جوی سریع</p>
 <p>searchiaInstantSearchResultContainer</p>
-<p dir="rtl"></p>
+<p dir="rtl">selector مربوط به نتایج جست‌و‌جوی سریع</p>
 <p>searchiaSearchTemplate</p>
-<p dir="rtl"></p>
+<p dir="rtl">قالب مربوط به جست‌و‌جو</p>
 <p>searchiaSearchResultContainer</p>
-<p dir="rtl"></p>
+<p dir="rtl">selector مربوط به نتایج جست‌و‌جو</p>
 <p>searchiaTotalHitsContainer</p>
-<p dir="rtl"></p>
+<p dir="rtl">selector مربوط به تعداد کل نتایج بازیابی شده</p>
 <p>searchiaSearchTime</p>
-<p dir="rtl"></p>
+<p dir="rtl">selector مربوط به زمان واکشی نتایج</p>
 <p>searchiaIndexName</p>
-<p dir="rtl"></p>
+<p dir="rtl">نام index که در سرچیا تعریف شده‌است</p>
 <p>searchiaAPIKey</p>
-<p dir="rtl"></p>
+<p dir="rtl">apiKey که از سرچیا دریافت کرده‌اید</p>
 <p>searchiaSearchInputId</p>
-<p dir="rtl"></p>
+<p dir="rtl">selector مربوط به input مربوط به جست‌و‌جو</p>
 <p>searciaFrom</p>
-<p dir="rtl"></p>
+<p dir="rtl">ردیف شروع واکشی نتایج</p>
 <p>searchiaNRPP</p>
-<p dir="rtl"></p>
-<p>runSearchiaOnInputChange</p><p dir="rtl"></p>
+<p dir="rtl">تعداد نتایج واکشی شده (Number Of Results Per Page)</p>
+<p>runSearchiaOnInputChange</p>
+<p dir="rtl">در صورتی که مقدار این مورد برابر true باشد با تغییر input مربوط به جستجو(searchiaSearchInputId) به صورت خودکار محتوای تابع instantSearch() با پرس‌و‌جو موجود در input جست‌و‌جو فراخوانی خواهد‌شد</p>
 
 
 
@@ -96,19 +97,32 @@
 
 <p dir="rtl">این کتاب‌خانه به طور کلی شامل ۴ تابع است که نحوه استفاده از هر کدام به شرح زیر است:</p>
 
+<p dir="rtl">جست‌و‌جوی سریع</p>
 
 ```
 instantSearch(query,nrpp);
 ```
+<li dir="rtl">توضیحات جست‌و‌جوی سریع ؟؟؟</li>
+
+<p dir="rtl">جست‌و‌جو</p>
 
 ```
 search(query,from,nrpp);
 ```
+<li dir="rtl">توضیحات جست‌و‌جو ؟؟؟</li>
+
+<p dir="rtl">کلیک</p>
 
 ```
 click(query,docId,position);
 ```
+<li dir="rtl">کلیک کاربر بر روی نتیجه جست‌و‌جو</li>
+
+
+<p dir="rtl">اضافه کردن محصول به سبد خرید</p>
 
 ```
 addToCart(docId);
 ```
+<li dir="rtl" style="font-size=.1em">اضافه کردن محصول به سبد خرید توسط کاربر</li>
+
