@@ -10,9 +10,17 @@
 تکنولوژی مورد استفاده جهت پیاده‌سازی:
 * javascript
 
+
 	
-## نحوه استفاده
-این کتاب‌خانه به طور کلی شامل ۴ تابع است که نحوه استفاده از هر کدام به شرح زیر است:
+## اضافه کردن کتاب‌خانه و مقداردهی تنظیمات
+<p dir="rtl">
+جهت استفاده از این کتاب‌خانه لازم است قبل از فراخوانی توابع فایل حاوی توابع در صفحه بارگزاری شود.
+	<br>
+لازم است فقط یک بار قبل از استفاده از توابع مقادیر مربوط به تنظیمات مقداردهی شود.
+	<br>
+بدیهی است در صورت عدم مقداردهی هر یک از موارد، مقدار پیش‌فرض اعمال خواهد شد.
+</p>
+
 
 ```
 <script type="text/javascript" src="searchia.js?v=2"></script>
@@ -34,3 +42,17 @@
   };
 </script>
 ```
+searchiaTemplate->
+searchiaResContainer->
+searchiaTotalHitsContainer->
+searchiaSearchTime->
+searchiaInstantIndexName->
+searchiaIndexName->
+searchiaAPIKey->
+earchiaSearchInputId->
+searciaFrom->
+searchiaNRPP->
+runSearchiaOnInputChange->
+
+## توابع
+این کتاب‌خانه به طور کلی شامل ۴ تابع است که نحوه استفاده از هر کدام به شرح زیر است:
