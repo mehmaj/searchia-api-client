@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>جست‌و‌جوی سریع سرچیا</title>
+		<!-- Bootstrap CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<style type="text/css">
+	/* Bootstrap 4 text input with search icon */
+ 
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+ 
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+</style>
+	</head>
+	<body>
+		  <!-- Actual search box -->
+  <div class="form-group has-search">
+    <span class="fa fa-search form-control-feedback"></span>
+    <input type="text" class="form-control" id="searchia-search-box"  placeholder="جست‌و‌جو" style="    direction: rtl;" >
+  </div>
+		<div id="sponseDiv" class="col">
+<table class="table" >
+  <thead>
+    <tr>
+      <th data-field="position">ردیف</th>
+      <th data-field="id">شناسه</th>
+      <th data-field="name">عمق</th>
+      <th data-field="price">عنوان</th>
+    </tr>
+  </thead>
+  <tbody id="searchia-res-container">
+  </tbody>
+</table>
+  </div>
+	</body>
+  <script type="text/javascript" src="https://github.com/mehmaj/searchia-api-client/blob/main/searchia-api-client.js"></script>
+	<script type="text/javascript">
+     window.onload = function () {
+       searchia= new SearchiaBuilder({
+       searchiaInstantSearchTemplate:"<tr><td>${this.position}</td><td>${this.docId}</td><td>${this.depth}</td><td>${this.title}</td></tr>",
+     searchiaInstantSearchResultContainer:"searchia-res-container",
+     searchiaSearchTemplate:"<tr><td>${this.position}</td><td>${this.docId}</td><td>${this.depth}</td><td>${this.title}</td></tr>",
+     searchiaSearchResultContainer:"searchia-res-container",
+     searchiaTotalHitsContainer:"searchia-total-hits",
+     searchiaSearchTime:"searchia-search-time",
+     searchiaIndexName:"yazd_uni",
+     searchiaAPIKey:"WewDcp6ocko8ZY0",
+     searchiaSearchInputId:'searchia-search-box',
+     searciaFrom:0,
+     searchiaNRPP:10,
+     runSearchiaOnInputChange:true
+    });
+  };
+
+</script>
+</html>
